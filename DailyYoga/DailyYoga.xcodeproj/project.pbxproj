@@ -28,8 +28,8 @@
 		B45E59FE1D369E0600D3B249 /* YGCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EA1D369E0600D3B249 /* YGCourse.swift */; };
 		B45E59FF1D369E0600D3B249 /* YGPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EB1D369E0600D3B249 /* YGPlan.swift */; };
 		B45E5A001D369E0600D3B249 /* YGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EC1D369E0600D3B249 /* YGUser.swift */; };
-		B49F95671D38CD8400BFB292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49F955A1D38CD6A00BFB292 /* Alamofire.framework */; };
 		B49F959D1D38D17400BFB292 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */; };
+		B49F959E1D38D3B100BFB292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49F955A1D38CD6A00BFB292 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B49F95671D38CD8400BFB292 /* Alamofire.framework in Frameworks */,
+				B49F959E1D38D3B100BFB292 /* Alamofire.framework in Frameworks */,
 				B45E59CA1D36985800D3B249 /* StoreKit.framework in Frameworks */,
 				B45E59CC1D36987C00D3B249 /* HealthKit.framework in Frameworks */,
 			);
