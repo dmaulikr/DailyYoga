@@ -29,6 +29,7 @@
 		B45E59FF1D369E0600D3B249 /* YGPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EB1D369E0600D3B249 /* YGPlan.swift */; };
 		B45E5A001D369E0600D3B249 /* YGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EC1D369E0600D3B249 /* YGUser.swift */; };
 		B49F95671D38CD8400BFB292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49F955A1D38CD6A00BFB292 /* Alamofire.framework */; };
+		B49F959D1D38D17400BFB292 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		B45E59EB1D369E0600D3B249 /* YGPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGPlan.swift; sourceTree = "<group>"; };
 		B45E59EC1D369E0600D3B249 /* YGUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGUser.swift; sourceTree = "<group>"; };
 		B49F954F1D38CD6A00BFB292 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 		B45E59DF1D369E0600D3B249 /* ExternalLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B49F959B1D38D17400BFB292 /* SwiftyJSON */,
 			);
 			path = ExternalLibrary;
 			sourceTree = "<group>";
@@ -274,6 +277,14 @@
 				B49F95661D38CD6A00BFB292 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B49F959B1D38D17400BFB292 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +447,7 @@
 				B45E59EE1D369E0600D3B249 /* YGConstant.swift in Sources */,
 				B45E59F71D369E0600D3B249 /* YGTabBarController.swift in Sources */,
 				B45E59EF1D369E0600D3B249 /* YGDateFormat.swift in Sources */,
+				B49F959D1D38D17400BFB292 /* SwiftyJSON.swift in Sources */,
 				B45E59F31D369E0600D3B249 /* YGGuideController.swift in Sources */,
 				B45E59F21D369E0600D3B249 /* YGUtil.swift in Sources */,
 			);
@@ -551,6 +563,7 @@
 				CODE_SIGN_ENTITLEMENTS = DailyYoga/DailyYoga.entitlements;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DailyYoga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dailyyoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -565,6 +578,7 @@
 				CODE_SIGN_ENTITLEMENTS = DailyYoga/DailyYoga.entitlements;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DailyYoga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dailyyoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
