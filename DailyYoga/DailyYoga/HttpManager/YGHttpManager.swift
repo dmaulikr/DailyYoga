@@ -6,7 +6,6 @@
 //  Copyright © 2016年 Beryter. All rights reserved.
 //
 
-/*
 import Foundation
 import Alamofire
 
@@ -21,7 +20,7 @@ class YGHttpManager {
         headSettings["dailyyoga-channel"] = kYGChannel
         headSettings["dailyyoga-deviceId"] = "aa"
         self.httpHeader = headSettings
-        let configuration = URLSessionConfiguration.default()
+        let configuration = URLSessionConfiguration.default;
         configuration.httpAdditionalHeaders = self.httpHeader
         configuration.timeoutIntervalForRequest = 30
         self.httpManager = Alamofire.Manager(configuration: configuration)
@@ -48,4 +47,3 @@ class YGHttpManager {
         }
     }
 }
-*/
