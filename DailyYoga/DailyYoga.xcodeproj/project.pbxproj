@@ -29,7 +29,7 @@
 		B45E59FF1D369E0600D3B249 /* YGPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EB1D369E0600D3B249 /* YGPlan.swift */; };
 		B45E5A001D369E0600D3B249 /* YGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EC1D369E0600D3B249 /* YGUser.swift */; };
 		B49F959D1D38D17400BFB292 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */; };
-		B49F959E1D38D3B100BFB292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49F955A1D38CD6A00BFB292 /* Alamofire.framework */; };
+		B49F959E1D38D3B100BFB292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49F955A1D38CD6A00BFB292 /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +81,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
+		};
+		B49F959F1D38D71000BFB292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49F954F1D38CD6A00BFB292 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -301,6 +308,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B49F95A01D38D71000BFB292 /* PBXTargetDependency */,
 			);
 			name = DailyYoga;
 			productName = DailyYoga;
@@ -454,6 +462,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B49F95A01D38D71000BFB292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = B49F959F1D38D71000BFB292 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B45E59BE1D3697FE00D3B249 /* LaunchScreen.storyboard */ = {
