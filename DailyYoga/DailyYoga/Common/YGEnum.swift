@@ -8,6 +8,13 @@
 
 import Foundation
 
+///设备型号
+enum YGDeviceType: Int {
+    case unknow = 1
+    case phone
+    case pad
+}
+
 /// 主界面类型
 enum YGRootViewControllerType: Int
 {

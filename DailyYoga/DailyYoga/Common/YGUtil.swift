@@ -7,18 +7,91 @@
 //
 
 import Foundation
+import AdSupport
 import UIKit
 
 struct YGUtil {
     
+    ///图片裁剪方式
     enum YGImageFormatType {
         case None
         case Scale
         case CenterCrop
     }
     
-    static func test(){
-        
+    /**
+     获取系统版本号
+     - returns: String 系统版本号
+     */
+    static func appVersion() -> String
+    {
+        return String(Bundle.main.infoDictionary!["CFBundleShortVersionString"])
+    }
+    
+    /**
+     获取IDFA
+     - returns: String IDFA
+     */
+    static func appIDFA() -> String
+    {
+        return ASIdentifierManager.shared().advertisingIdentifier.uuidString
+    }
+    
+    /**
+     设备的型号
+     - returns: YGDeviceType 设备型号
+     */
+    static func deviceType() -> YGDeviceType
+    {
+        if UI_USER_INTERFACE_IDIOM() == .pad {
+            return YGDeviceType.pad
+        }
+        return YGDeviceType.phone
+    }
+    
+    /**
+     判断设备是否是pad
+     - returns: Bool true - pad
+     */
+    static func isPad() -> Bool
+    {
+        return UI_USER_INTERFACE_IDIOM() == .pad
+    }
+    
+    /**
+     判断设备是否是phone
+     - returns: Bool true - iphone
+     */
+    static func isPhone() -> Bool
+    {
+        return UI_USER_INTERFACE_IDIOM() == .phone
+    }
+    
+    /**
+     屏幕的宽度
+     - returns: CGFloat 设备宽度
+     */
+    static func screenWidth() -> CGFloat
+    {
+        return min(UIScreen.main().bounds.width, UIScreen.main().bounds.height)
+    }
+    
+    /**
+     屏幕的宽度
+     - returns: CGFloat 设备高度
+     */
+    static func screenHeight() -> CGFloat
+    {
+        return max(UIScreen.main().bounds.width, UIScreen.main().bounds.height)
+    }
+    
+    /**
+     app内边线的宽度
+     - returns: Float 线的宽度
+     */
+    static func lineWidth() -> Float
+    {
+        return isPad() ? 1.0 : 0.6
     }
     
     static func deleteEmoji(string: String, sty: String) -> String

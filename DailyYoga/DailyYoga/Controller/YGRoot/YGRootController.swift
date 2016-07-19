@@ -9,10 +9,22 @@
 import UIKit
 
 class YGRootController: UIViewController {
-
+    
+    let guideController = YGGuideController()
+    let tabController = YGTabBarController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red();
+        
+        self.addChildViewController(guideController)
+        self.addChildViewController(tabController)
+        
+        if YGCacheHandler.firstLaunch() {
+            self.view.addSubview(guideController.view)
+        }else{
+            self.view.addSubview(tabController.view)
+        }
+        YGCacheHandler.updateFisrtLaunch()
     }
 
     override func didReceiveMemoryWarning() {

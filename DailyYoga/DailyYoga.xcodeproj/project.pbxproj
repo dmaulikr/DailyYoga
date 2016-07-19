@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B424B3791D3DBAB800783171 /* YGPracticeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424B3781D3DBAB800783171 /* YGPracticeRootController.swift */; };
+		B424B37B1D3DBAD900783171 /* YGForumRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424B37A1D3DBAD900783171 /* YGForumRootController.swift */; };
+		B424B37D1D3DBAF000783171 /* YGNewsRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424B37C1D3DBAF000783171 /* YGNewsRootController.swift */; };
+		B424B37F1D3DBB0500783171 /* YGUserCenterRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424B37E1D3DBB0500783171 /* YGUserCenterRootController.swift */; };
+		B424B3841D3DBFD500783171 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424B3831D3DBFD500783171 /* UIColorExtension.swift */; };
+		B43D9BE81D3C878800DE6BAF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43D9BE71D3C878800DE6BAF /* AVKit.framework */; };
+		B43D9BF01D3C879100DE6BAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43D9BEF1D3C879100DE6BAF /* AVFoundation.framework */; };
 		B45E59B61D3697FE00D3B249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59B51D3697FE00D3B249 /* AppDelegate.swift */; };
 		B45E59BD1D3697FE00D3B249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E59BC1D3697FE00D3B249 /* Assets.xcassets */; };
 		B45E59C01D3697FE00D3B249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45E59BE1D3697FE00D3B249 /* LaunchScreen.storyboard */; };
@@ -30,6 +37,7 @@
 		B45E5A001D369E0600D3B249 /* YGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45E59EC1D369E0600D3B249 /* YGUser.swift */; };
 		B49F959D1D38D17400BFB292 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */; };
 		B49F959E1D38D3B100BFB292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49F955A1D38CD6A00BFB292 /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B49F95A21D38D94300BFB292 /* YGCacheHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F95A11D38D94300BFB292 /* YGCacheHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +100,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B424B3781D3DBAB800783171 /* YGPracticeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGPracticeRootController.swift; sourceTree = "<group>"; };
+		B424B37A1D3DBAD900783171 /* YGForumRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGForumRootController.swift; sourceTree = "<group>"; };
+		B424B37C1D3DBAF000783171 /* YGNewsRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGNewsRootController.swift; sourceTree = "<group>"; };
+		B424B37E1D3DBB0500783171 /* YGUserCenterRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGUserCenterRootController.swift; sourceTree = "<group>"; };
+		B424B3831D3DBFD500783171 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B43D9BE71D3C878800DE6BAF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B43D9BEF1D3C879100DE6BAF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B45E59B21D3697FE00D3B249 /* DailyYoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyYoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E59B51D3697FE00D3B249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B45E59BC1D3697FE00D3B249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +117,6 @@
 		B45E59CB1D36987C00D3B249 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		B45E59CF1D369E0600D3B249 /* YGConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGConstant.swift; sourceTree = "<group>"; };
 		B45E59D01D369E0600D3B249 /* YGDateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGDateFormat.swift; sourceTree = "<group>"; };
-		B45E59D11D369E0600D3B249 /* YGDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGDefine.h; sourceTree = "<group>"; };
 		B45E59D21D369E0600D3B249 /* YGEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGEnum.swift; sourceTree = "<group>"; };
 		B45E59D31D369E0600D3B249 /* YGSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGSingleton.swift; sourceTree = "<group>"; };
 		B45E59D41D369E0600D3B249 /* YGUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGUtil.swift; sourceTree = "<group>"; };
@@ -119,6 +133,7 @@
 		B45E59EC1D369E0600D3B249 /* YGUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGUser.swift; sourceTree = "<group>"; };
 		B49F954F1D38CD6A00BFB292 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		B49F959C1D38D17400BFB292 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		B49F95A11D38D94300BFB292 /* YGCacheHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGCacheHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43D9BF01D3C879100DE6BAF /* AVFoundation.framework in Frameworks */,
+				B43D9BE81D3C878800DE6BAF /* AVKit.framework in Frameworks */,
 				B49F959E1D38D3B100BFB292 /* Alamofire.framework in Frameworks */,
 				B45E59CA1D36985800D3B249 /* StoreKit.framework in Frameworks */,
 				B45E59CC1D36987C00D3B249 /* HealthKit.framework in Frameworks */,
@@ -135,6 +152,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B424B36E1D3DBA4000783171 /* YGForum */ = {
+			isa = PBXGroup;
+			children = (
+				B424B37A1D3DBAD900783171 /* YGForumRootController.swift */,
+			);
+			path = YGForum;
+			sourceTree = "<group>";
+		};
+		B424B36F1D3DBA4000783171 /* YGNews */ = {
+			isa = PBXGroup;
+			children = (
+				B424B37C1D3DBAF000783171 /* YGNewsRootController.swift */,
+			);
+			path = YGNews;
+			sourceTree = "<group>";
+		};
+		B424B3701D3DBA4000783171 /* YGPractice */ = {
+			isa = PBXGroup;
+			children = (
+				B424B3781D3DBAB800783171 /* YGPracticeRootController.swift */,
+			);
+			path = YGPractice;
+			sourceTree = "<group>";
+		};
+		B424B3711D3DBA4000783171 /* YGUserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B424B37E1D3DBB0500783171 /* YGUserCenterRootController.swift */,
+			);
+			path = YGUserCenter;
+			sourceTree = "<group>";
+		};
+		B424B3801D3DBF1C00783171 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B424B3831D3DBFD500783171 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B45E59A91D3697FE00D3B249 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +233,8 @@
 		B45E59C81D36985800D3B249 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B43D9BEF1D3C879100DE6BAF /* AVFoundation.framework */,
+				B43D9BE71D3C878800DE6BAF /* AVKit.framework */,
 				B45E59CB1D36987C00D3B249 /* HealthKit.framework */,
 				B45E59C91D36985800D3B249 /* StoreKit.framework */,
 			);
@@ -185,9 +244,9 @@
 		B45E59CE1D369E0600D3B249 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B424B3801D3DBF1C00783171 /* Extension */,
 				B45E59CF1D369E0600D3B249 /* YGConstant.swift */,
 				B45E59D01D369E0600D3B249 /* YGDateFormat.swift */,
-				B45E59D11D369E0600D3B249 /* YGDefine.h */,
 				B45E59D21D369E0600D3B249 /* YGEnum.swift */,
 				B45E59D31D369E0600D3B249 /* YGSingleton.swift */,
 				B45E59D41D369E0600D3B249 /* YGUtil.swift */,
@@ -199,6 +258,10 @@
 			isa = PBXGroup;
 			children = (
 				B45E59D61D369E0600D3B249 /* YGGuide */,
+				B424B3701D3DBA4000783171 /* YGPractice */,
+				B424B36E1D3DBA4000783171 /* YGForum */,
+				B424B36F1D3DBA4000783171 /* YGNews */,
+				B424B3711D3DBA4000783171 /* YGUserCenter */,
 				B45E59D81D369E0600D3B249 /* YGRoot */,
 			);
 			path = Controller;
@@ -233,6 +296,7 @@
 		B45E59DE1D369E0600D3B249 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				B49F95A11D38D94300BFB292 /* YGCacheHandler.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -445,18 +509,24 @@
 				B45E59FF1D369E0600D3B249 /* YGPlan.swift in Sources */,
 				B45E59F11D369E0600D3B249 /* YGSingleton.swift in Sources */,
 				B45E5A001D369E0600D3B249 /* YGUser.swift in Sources */,
+				B424B37F1D3DBB0500783171 /* YGUserCenterRootController.swift in Sources */,
 				B45E59FB1D369E0600D3B249 /* YGHttpError.swift in Sources */,
+				B424B37D1D3DBAF000783171 /* YGNewsRootController.swift in Sources */,
 				B45E59FC1D369E0600D3B249 /* YGHttpManager.swift in Sources */,
 				B45E59FD1D369E0600D3B249 /* YGInterface.swift in Sources */,
 				B45E59B61D3697FE00D3B249 /* AppDelegate.swift in Sources */,
+				B424B3841D3DBFD500783171 /* UIColorExtension.swift in Sources */,
 				B45E59F51D369E0600D3B249 /* YGNavigationController.swift in Sources */,
 				B45E59F61D369E0600D3B249 /* YGRootController.swift in Sources */,
 				B45E59FE1D369E0600D3B249 /* YGCourse.swift in Sources */,
+				B424B3791D3DBAB800783171 /* YGPracticeRootController.swift in Sources */,
 				B45E59EE1D369E0600D3B249 /* YGConstant.swift in Sources */,
 				B45E59F71D369E0600D3B249 /* YGTabBarController.swift in Sources */,
+				B424B37B1D3DBAD900783171 /* YGForumRootController.swift in Sources */,
 				B45E59EF1D369E0600D3B249 /* YGDateFormat.swift in Sources */,
 				B49F959D1D38D17400BFB292 /* SwiftyJSON.swift in Sources */,
 				B45E59F31D369E0600D3B249 /* YGGuideController.swift in Sources */,
+				B49F95A21D38D94300BFB292 /* YGCacheHandler.swift in Sources */,
 				B45E59F21D369E0600D3B249 /* YGUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var rootController: YGRootController?
+    var rootNavgationController: YGNavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.main().bounds)
-        let rootController = YGRootController()
-        window?.rootViewController = rootController;
+        rootController = YGRootController()
+        rootNavgationController = YGNavigationController(rootViewController:rootController!)
+        window?.rootViewController = rootNavgationController;
         window?.makeKeyAndVisible();
         return true
     }
@@ -42,7 +47,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    private func configureApp()
+    {
+        if Int(UIDevice.current().systemVersion) > 8 && UIDevice.current().userInterfaceIdiom == .pad
+        {
+            UIApplication.shared().statusBarOrientation = .portrait
+        }
+        UIApplication.shared().statusBarStyle = .lightContent
+        UIApplication.shared().isIdleTimerDisabled = true
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch {
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+        }
+        
+        UIApplication.shared().beginReceivingRemoteControlEvents()
+        
+    }
 }
 

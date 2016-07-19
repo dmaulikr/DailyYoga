@@ -12,7 +12,7 @@ class YGBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(rgb: kYGColor_f9fafa)
     }
 
     override func didReceiveMemoryWarning() {
